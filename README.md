@@ -2,7 +2,7 @@
 Official repository for the EMNLP 2024 paper [CItruS: Chunked Instruction-aware State Eviction for Long Sequence Modeling](https://arxiv.org/abs/2406.12018), by Yu Bai∗, Xiyuan Zou∗, Heyan Huang, Sanxing Chen, Marc-Antoine Rondeau, Yang Gao, and Jackie Chi Kit Cheung
 
 <p align="center">
-  <img src="figure_5.png" width="33%" height="33%">
+  <img src="figure_5.PNG" width="43%" height="33%">
 </p>
 
 ## How to use
