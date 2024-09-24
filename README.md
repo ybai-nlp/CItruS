@@ -4,6 +4,8 @@ Official repository for the EMNLP 2024 paper [CItruS: Chunked Instruction-aware 
 ## How to use
 First set the environment:
 ```bash
+conda create -y -n citrus_env python=3.9 cudatoolkit=11.3.1 --override-channels -c conda-forge -c nvidia
+conda activate citrus_env
 pip install transformers==4.34.0 datasets sentencepiece
 pip install accelerate bitsandbytes
 pip install jieba fuzzywuzzy rouge
@@ -36,5 +38,10 @@ generation_config = {
 
 generated_text=generate_with_citrus(model, tokenizer, prompt_context, prompt_instruction, device, state_eviction_config, generation_config)
 print(generated_text)
+```
+
+Run CItruS on LongBench datasets
+```bash
+bash run_on_longbench.sh --model_name=meta-llama/Llama-2-7b-chat-hf --dataset_name=qasper --cache_type=instruction_aware_single --chunk_size=256  --k=768 
 ```
 
