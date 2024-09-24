@@ -45,3 +45,12 @@ Run CItruS on LongBench datasets
 bash run_on_longbench.sh --model_name=meta-llama/Llama-2-7b-chat-hf --dataset_name=qasper --cache_type=instruction_aware_single --chunk_size=256  --k=768 
 ```
 
+## Citation
+```
+@misc{2406.12018,
+Author = {Yu Bai and Xiyuan Zou and Heyan Huang and Sanxing Chen and Marc-Antoine Rondeau and Yang Gao and Jackie Chi Kit Cheung},
+Title = {CItruS: Chunked Instruction-aware State Eviction for Long Sequence Modeling},
+Year = {2024},
+Eprint = {arXiv:2406.12018},
+}
+```
