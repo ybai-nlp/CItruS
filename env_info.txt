@@ -1,0 +1,3 @@
+pip install transformers==4.34.0 datasets sentencepiece
+pip install accelerate bitsandbytes
+pip install jieba fuzzywuzzy rouge
