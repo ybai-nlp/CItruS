@@ -1,12 +1,14 @@
-# CItruS
-Official repository for the EMNLP 2024 paper [CItruS: Chunked Instruction-aware State Eviction for Long Sequence Modeling](https://arxiv.org/abs/2406.12018), by Yu Bai∗, Xiyuan Zou∗, Heyan Huang, Sanxing Chen, Marc-Antoine Rondeau, Yang Gao, and Jackie Chi Kit Cheung
+# CItruS: Chunked Instruction-aware State Eviction for Long Sequence Modeling
+Official repository for the EMNLP 2024 paper [CItruS: Chunked Instruction-aware State Eviction for Long Sequence Modeling](https://arxiv.org/abs/2406.12018), by Yu Bai\*, Xiyuan Zou\*, Heyan Huang, Sanxing Chen, Marc-Antoine Rondeau, Yang Gao, and Jackie Chi Kit Cheung
+
+_*: Equal contribution_
 
 <p align="center">
   <img src="figure_5.PNG" width="43%" height="33%">
 </p>
 
 ## How to use
-First set the environment:
+First, set the environment:
 ```bash
 conda create -y -n citrus_env python=3.9 cudatoolkit=11.3.1 --override-channels -c conda-forge -c nvidia
 conda activate citrus_env
@@ -16,7 +18,7 @@ pip install jieba fuzzywuzzy rouge
 git clone https://github.com/ybai-nlp/CItruS
 ```
 
-Next follow the sample use below:
+Next, follow the sample use below:
 ```python
 from CItruS.src.citrus_methods import generate_with_citrus
 from transformers import AutoTokenizer, AutoModelForCausalLM
